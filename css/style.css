@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    margin-top: 99px;
+    color: #000000;
+    font-size: 1.2rem;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+
+.header {
+    top: 0px;
+    width: 100%;
+    height: 99px;
+    padding-top: 31px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+
+}
+
+.site-logo {
+    background-image: url(../images/logo-type.svg);
+    background-size: cover;
+    width: 200px;
+    height: 40px;
+    margin-left: 99px;
+    float: left;
+    cursor: pointer;
+}
+
+.global-nav {
+    margin-right: 61px;
+    float: right;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 52px;
+    font-size: 1.6rem;
+}
+
+.global-nav .nav-item a {
+    position: relative;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.global-nav .nav-item a:link,
+.global-nav .nav-item a:link,
+.global-nav .nav-item a:visited,
+.global-nav .nav-item a:active {
+    color: #000000;
+}
+
+.global-nav .nav-item>a:hover {
+    opacity: 0.6;
+}
+
+.nav-item a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .2s;
+}
+
+.nav-item a:hover::after {
+    transform: scale(1, 1);
+}
+
+.section {
+    padding: 106px 5% 0;
+}
+
+.mv {
+    display: block;
+    width: 100%;
+    height: 641px;
+    margin: 0 auto;
+
+}
+
+.heading {
+    font-size: 4.2rem;
+    margin-bottom: 51px;
+    font-weight: 500;
+}
+
+.sub-title {
+    font-size: 2.4rem;
+    margin-top: 51px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.description {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sub-subtitle {
+    font-size: 2.0rem;
+    font-weight: 500;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+}
+
+.concept-order {
+    display: inline-block;
+
+}
+
+.concept-order .concept-item {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+.staff-image {
+    width: 129px;
+    height: 129px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.profile {
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.text-wrapper {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.comment, .adress {
+    display: block;
+    text-align: left;
+}
+
+
+.style-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.item {
+    display: block;
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    object-position: 0 0;
+
+
+}
+
+.item-m {
+    display: block;
+    width: 404px;
+    height: auto;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.face {
+    display: block;
+    width: 200px;
+    margin-bottom: 4px;
+}
+
+.face-m {
+    display: block;
+    width: 404px;
+    margin-bottom: 4px;
+}
+
+.menu-box-wrapper, .business-hours-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    display: table;
+    border-collapse: separate;
+    /* セルの間隔を空ける */
+    border-spacing: 30px 30px;
+    /* 左右 上下で記述 */
+}
+
+.menu-box, .business-hours-box {
+    display: table-cell;
+    table-layout: auto;
+
+}
+
+.menu-box-text, .business-hours-text {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.button {
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #afa58d;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.card-icon {
+    font-size: 4.0rem;
+    margin-right: 20px;
+}
+
+.map {
+    width: 800px;
+    height: 400px;
+}
+
+.footer {
+    padding: 30px;
+    font-size: 1.3rem;
+
+}
